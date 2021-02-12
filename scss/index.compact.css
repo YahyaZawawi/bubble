@@ -1,0 +1,37 @@
+@font-face { font-family: 'DIN Next LT Arabic'; src: url("../fonts/DINNextLTArabic-Regular.woff2") format("woff2"), url(" fonts/DINNextLTArabic-Regular.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'DIN Next LT Arabic'; src: url("../fonts/DINNextLTArabic-Bold.woff2") format("woff2"), url(" fonts/DINNextLTArabic-Bold.woff") format("woff"); font-weight: bold; font-style: normal; }
+
+@font-face { font-family: 'DIN NEXTTM ARABIC'; src: url("../fonts/DINNextLTW23-Medium.woff2") format("woff2"), url(" fonts/DINNextLTW23-Medium.woff") format("woff"); font-weight: 500; font-style: normal; }
+
+* { margin: 0; padding: 0; font-family: sans-serif; }
+
+@media only screen and (min-width: 1024px) { #hero { width: 100%; height: 100vh; background-image: url("../images/background.png"); background-size: cover; background-position: center; position: relative; overflow: hidden; }
+  #hero .navbar { width: 85%; height: 15%; margin: auto; display: flex; align-items: center; justify-content: space-between; }
+  #hero .navbar .logo { width: 100px; cursor: pointer; }
+  #hero .navbar button { color: #fbfcfd; padding: 10px 25px; background: transparent; border: 1px solid #fff; border-radius: 20px; outline: none; cursor: pointer; }
+  #hero .navbar button:hover { color: #037378; background-color: #fff; }
+  #hero .content { color: #fbfcfd; position: absolute; top: 50%; left: 8%; transform: translateY(-50%); z-index: 2; }
+  #hero .content button { color: #fbfcfd; padding: 10px 25px; background: transparent; border: 1px solid #fff; border-radius: 20px; outline: none; cursor: pointer; }
+  #hero .content h1 { font-size: 80px; margin: 10px 0 30px; line-height: 80px; }
+  #hero .side-bar { width: 50px; height: 100vh; background: linear-gradient(#00545d, #000729); position: absolute; right: 0; top: 0; }
+  #hero .side-bar .menu { display: block; width: 25px; margin: 40px auto 0; cursor: pointer; }
+  #hero .side-bar .social-links { width: 50px; text-align: center; position: absolute; top: 50%; transform: translateY(-50%); }
+  #hero .side-bar .social-links img { width: 25px; margin: 5px auto; cursor: pointer; }
+  #hero .side-bar .useful-links { width: 50px; text-align: center; position: absolute; bottom: 30px; }
+  #hero .side-bar .useful-links img { width: 25px; margin: 5px auto; cursor: pointer; }
+  #hero .bubbles { width: 100%; display: flex; align-items: center; justify-content: space-around; position: absolute; bottom: -70px; }
+  #hero .bubbles img { width: 50px; animation: bubble 7s linear infinite; }
+  @keyframes bubble { 0% { transform: translateY(0);
+      opacity: 0; }
+    50% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { transform: translateY(-80vh);
+      opacity: 0; } }
+  #hero .bubbles img:nth-child(1) { animation-delay: 2s; width: 25px; }
+  #hero .bubbles img:nth-child(2) { animation-delay: 1s; }
+  #hero .bubbles img:nth-child(3) { animation-delay: 3s; width: 25px; }
+  #hero .bubbles img:nth-child(4) { animation-delay: 4.5s; }
+  #hero .bubbles img:nth-child(5) { animation-delay: 3s; }
+  #hero .bubbles img:nth-child(6) { animation-delay: 6s; width: 20px; }
+  #hero .bubbles img:nth-child(7) { animation-delay: 7s; width: 35px; } }
